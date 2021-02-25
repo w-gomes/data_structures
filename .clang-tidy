@@ -1,0 +1,6 @@
+---
+Checks: '*,-altera-*,-fuchsia-*,-google-*,-zircon-*,-abseil-*,-android-*,-darwin-*,-objc-*,-llvm-*,-llvmlibc-*,-mpi-*,-openmp-*,-readability-else-after-return,-modernize-use-trailing-return-type,-cppcoreguidelines-avoid-magic-numbers,-readability-magic-numbers'
+WarningsAsErrors: ''
+HeaderFilterRegex: '.*'
+FormatStyle: none
+...
