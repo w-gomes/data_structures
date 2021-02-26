@@ -103,6 +103,5 @@ int main() {
 
   // std::cout << g.dfs(1, 6) << '\n';
   // std::cout << g.bfs(1, 6) << '\n';
-  auto j = std::jthread{};
   return 0;
 }

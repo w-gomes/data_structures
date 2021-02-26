@@ -1,4 +1,7 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.16)
+
+set(CMAKE_TOOLCHAIN_FILE ${CMAKE_CURRENT_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake
+  CACHE STRING "Vcpkg toolchain file")
 
 project(random LANGUAGES CXX)
 include(cmake/standard_project_settings.cmake)
@@ -26,7 +29,7 @@ set(sources src/main.cpp)
 add_executable(${PROJECT_NAME} ${sources})
 
 target_link_libraries(${PROJECT_NAME} 
-  PUBLIC project_warnings
+  PRIVATE project_warnings
          project_options
          fmt::fmt-header-only
 )
